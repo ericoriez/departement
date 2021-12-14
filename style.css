@@ -24,8 +24,11 @@ header{
 nav{
     position: sticky;
     top: 30%;
-    left: 30%;
-    height: 10vh;
+    left: 30%; 
+    height: 10vh; 
+    
+
+    
 }
 nav > ul{
     display: flex ;
@@ -44,14 +47,10 @@ nav > ul > li > a {
 
 /*  page accueil */
 
-/* main */
-
-/* histoire */
-
 #histoire {
     width: 70%;
     background-color: #C0D2FF;
-    margin: 30px auto;
+    margin: 5vh auto;
     padding-bottom: 20px;
 }
 h2 {
@@ -59,40 +58,30 @@ h2 {
     padding: 30px;
     font-size: 36px;
 }
- p {
-    width: 600px;
+.accueil p {
+    width: 60%;
     padding:10px 30px;
     font-size: 18px;
     line-height: 24px;
 }
-
- /* geo */
-
  #geo{
      width: 70%;
      margin:30px auto;
      position: relative;
      margin: 30px auto;
      padding-bottom: 20px;
-    
  }
  #geo > img{
     position: absolute;
     top: 0;
     right: 0;
  }
-
- /* CLIMAT */
-
  #climat{
     width: 70%;
     background-color: #FFD596;
     margin: 30px auto;
     padding-bottom: 20px;
  }
-
- /* paysage */
-
  #paysage{
     width: 70%;
     margin: 30px auto;
@@ -102,74 +91,79 @@ h2 {
     display: flex;
     justify-content: space-around;
  }
- #img-accueil > img{
-    /* border: 20px solid #C0D2FF; */
- }
 
  /* page lieu */
-
- /* main */
 
  #grid{
      display: grid;
      grid-template-columns: repeat(2, 1fr);
      text-align: center;
-     gap: 5% 0;
-     margin: 5vh;
+     gap: 50px 50px;
+     margin: 3%;
      /* background: center / cover  url(Texture_Snowflakes_559152_1600x1200.jpg); */
-     height: 100%;
  }
 #grid img{
-    width: 80%;
+    width: 100%;
 }
  #grid figcaption {
     background-color: #C0D2FF;
-    width: 80%;
     height: 10%;
-    margin: 0 auto;
     line-height: 2.2rem;
     font-weight: bold;
     font-size: 1.5rem;
     color: #404040;
  }
+ .img-lieux{
+     display: flex;
+     flex-flow: column;
+     margin: auto;
+ }
 
  /* page marché */
-
- /* main */
 
 .marché{
      justify-content: center;
      display: flex;
+     margin: 10px 0;
+     width: 100%;
+
+     
+ }
+ .marché > article{
+     width: 100%;
+     display: flex;
+     width: 80%;
+      justify-content: space-between;
  }
  .marché .blue{
     background-color: #C0D2FF;
-    display: flex;
     margin: 2rem;
  }
  .marché .orange{
     background-color: #FFD596;
-    display: flex;
     margin: 2rem;
  }
  .marché article div{
     padding: 1rem;
+   
  }
- .marché article figure{
+ .img-marché{
     padding: 1rem;
+    
  }
  .marché p{
-     line-height: 0.5rem;
-     padding-top: 1.5rem;
+     line-height: 0.2rem;
+     padding: 1.5rem;
+     width: 100%;
+     font-size: 18px;
  }
 
  /* page actu */
-
- /* main */
  
 .actu{
     background-color: #C0D2FF;
     width: 80%;
-    margin: 5rem auto;
+    margin: 5vh auto;
     
 }
 .actu2{
@@ -198,7 +192,27 @@ h2 {
 }
 .actu p{
     width: 100%;
+    padding:10px 30px;
+    font-size: 18px;
+    line-height: 24px;
 }
 .actu2 p{
     width: 100%;
+    padding:10px 30px;
+    font-size: 18px;
+    line-height: 24px;
+    
+}
+
+/* footer */
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    background-color: #C0D2FF;
+    height: 20vh;
+    line-height: 20vh;
+}
+#logo-footer{
+    line-height: 25vh;
 }
